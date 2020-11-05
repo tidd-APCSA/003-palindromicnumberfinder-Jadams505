@@ -16,7 +16,7 @@ public class PalindromicNumberFinder {
       num++;
       while(!testPalindromicNum(num))
         num++;
-      return num;
+      return num - this.num;
     }
 
     // this is a helper method for searchForPalindromicNum. It's purpose is to test if a number is actually a palindrome
@@ -41,6 +41,6 @@ public class PalindromicNumberFinder {
 
     @Override
     public String toString(){
-        return "You'd have to drive " + (searchForPalindromicNum(this.num) - this.num) + " miles";
+        return "You'd have to drive " + searchForPalindromicNum(this.num) + " miles";
     }
 }
